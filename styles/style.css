@@ -111,10 +111,82 @@ body {
     max-width: 100%;
     height: auto;
     border-radius: 5px;
+    margin-top: 20px;
+  }
+/* choose destination section */
+.choose-destination {
+    text-align: center;
+    padding: 40px;
+}
+
+.destination-heading {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.destination-paragraph {
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+.destination-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.destination-image {
+    width: 30%;
+    margin: 10px;
+    position: relative;
+}
+.destination-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.image-heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 18px;
+}
+/* why choose us  */
+
+.why-choose-us {
+    background-color: #f7f4f4;
+    padding: 50px;
+    text-align: center;
+  }
+.choose-card{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.card-1{
+    background-color: #e0d2d2;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+  .card {
+    background-color: #e0d2d2;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .icon {
+    font-size: 24px;
+    margin-bottom: 10px;
   }
   /* footer section */
   footer {
-    background-color: #98999b; /* Light background color */
+    background-color: #98999b; 
     padding: 30px;
     text-align: center;
   }
@@ -162,6 +234,8 @@ body {
     color: #0056b3;
   }
   /* Media Query for Mobile Devices */
+
+
   @media only screen and (max-width: 600px) {
     header {
       padding: 60px 20px;
@@ -182,6 +256,7 @@ body {
 
     .btn {
       width: 80%;
+      
     }
     /* popular tour */
     .popular-tour {
@@ -196,7 +271,16 @@ body {
         text-align: center;
         margin: 0;
       }
+       /* choose destination */
+       .destination-image {
+        width: 100%;
+    }
+/* choose Us section */
+.choose-card{
+  grid-template-columns: repeat(1 ,1fr);
 
+  }
+       /* footer section */
       .logo {
         margin-bottom: 10px;
         margin-right: 0;
@@ -209,6 +293,8 @@ body {
       .social-icons a {
         margin: 10px 5px;
       }
+     
+       
   }
 
   
