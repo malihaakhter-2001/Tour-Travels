@@ -32,7 +32,7 @@ body {
 #find{
     background-color: #FF5400;
 }
-  .btn {
+  .btn-header {
     display: inline-block;
     padding: 10px 20px;
     font-size: 1.2em;
@@ -41,7 +41,7 @@ body {
     border: 2px solid #fff;
     border-radius: 5px;
     margin: 10px;
-   background-color: aliceblue;
+   background-color: white;
   }
 
   .btn i {
@@ -112,7 +112,55 @@ body {
     height: auto;
     border-radius: 5px;
   }
+  /* footer section */
+  footer {
+    background-color: #98999b; /* Light background color */
+    padding: 30px;
+    text-align: center;
+  }
+  span{
+    color: #FF5400;
+  }
+  .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
 
+  .logo {
+    max-width: 100%;
+    height: auto;
+    margin-right: 10px;
+  }
+
+  h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+  }
+
+  .social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    color: rgb(22, 21, 21);
+    font-size: 2em;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  .social-icons a:hover {
+    color: #0056b3;
+  }
   /* Media Query for Mobile Devices */
   @media only screen and (max-width: 600px) {
     header {
@@ -147,6 +195,19 @@ body {
         max-width: 100%;
         text-align: center;
         margin: 0;
+      }
+
+      .logo {
+        margin-bottom: 10px;
+        margin-right: 0;
+      }
+
+      .social-icons {
+        flex-wrap: wrap;
+      }
+
+      .social-icons a {
+        margin: 10px 5px;
       }
   }
 
