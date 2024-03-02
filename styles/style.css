@@ -41,11 +41,13 @@ body {
     border: 2px solid #fff;
     border-radius: 5px;
     margin: 10px;
+    gap: 10px;
    background-color: white;
   }
 
   .btn i {
     margin-right: 5px;
+    gap: 10px;
   }
 
   .btn:hover {
@@ -99,7 +101,8 @@ body {
     background-color:#FF5400 ;
     border: 1px solid white;
     border-radius: 5px;
-    transition: background 0.3s, color 0.3s;
+    transition:background 0.3s, color 0.3s;
+   
   }
 
   .btn:hover {
@@ -184,11 +187,61 @@ body {
     font-size: 24px;
     margin-bottom: 10px;
   }
+   /* Newsletter section  */
+   .newsletter-container {
+    display: flex;
+   justify-content: space-around;
+    max-width: 600px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    gap: 80px;
+}
+.travel-btn span{
+    font-size: 25px;
+    font-weight: bold;
+}
+.travel-btn{
+    border: 1px solid #FF5400;
+    background-color: #FF5400;
+    border-radius: 10px;
+    padding: 10px;
+    color:white ;
+    margin-top: 150px;
+    margin-left: 80px;
+}
+.newsletter-container input{
+    display: inline-block;
+    padding: 5px 5px;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.left{
+    border: 2px solid #FF5400 ;
+    padding: 20px;
+    border-radius: 10px;
+}
+.right{
+    background-image: url('../Images/Rectangle\ 9.png');
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.left, .right {
+    width: 100%;
+}
+
   /* footer section */
   footer {
     background-color: #98999b; 
     padding: 30px;
     text-align: center;
+    margin-top: 30px;
   }
   span{
     color: #FF5400;
@@ -280,6 +333,19 @@ body {
   grid-template-columns: repeat(1 ,1fr);
 
   }
+   /* Newsletter section  */
+   .newsletter-container {
+    flex-direction: column;
+    margin-left: 50px;
+}
+
+.left {
+    width: 80%;
+}
+
+.right {
+    width: 90%;
+}
        /* footer section */
       .logo {
         margin-bottom: 10px;
